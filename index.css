@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  /* width: 2800px;
+  height: 2500px; */
+  /* padding: 900px; */
+}
+
+.tooltip-target {
+  width: 2000px;
+  height: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: Montserrat-Medium;
+  /* margin: 520px; */
+}
+
+.container {
+  width: 400px;
+  height: 800px;
+  border: 1px solid black;
+  position: relative;
+  overflow: auto;
+  /* margin: 50px; */
+}
+
+.content {
+  width: 1500px;
+  height: 1520px;
+  position: relative;
+  padding: 900px;
+  display: flex;
+}
+
+/* Tooltip classes */
+.mc-tooltip-panel {
+  position: fixed;
+  max-width: 230px;
+}
+
+.mc-before-spacer,
+.mc-after-spacer {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.mc-tooltip {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  line-height: 1;
+  font-family: Montserrat-Medium;
+  background: #616161;
+  color: white;
+}

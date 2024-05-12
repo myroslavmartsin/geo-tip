@@ -1,0 +1,21 @@
+{
+  "name": "mc-tooltip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run bundle\" \"npm run workers\" \"npm run server\"",
+    "bundle": "esbuild index.ts --bundle --watch --minify --outdir=dist",
+    "workers": "esbuild src/webworkers/* --bundle --watch --minify --outdir=dist/src/webworkers",
+    "server": "browser-sync start --server --files '*.ts,*.css'"
+  },
+  "author": "Myroslav Martsin",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.19.8",
+    "typescript": "^5.3.2"
+  }
+}
